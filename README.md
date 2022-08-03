@@ -54,3 +54,73 @@ To close the dev server, hit Ctrl-C
 
 Stuck? Visit us at https://svelte.dev/chat
 ```
+
+
+### SvelteKit Tailwind CSS 
+
+https://tailwindcss.com/docs/guides/sveltekit
+
+* Install Tailwind CSS
+Using npm, install tailwindcss and its peer dependencies, as well as svelte-preprocess, and then run the following commands to generate both tailwind.config.cjs and postcss.config.cjs.
+
+```
+npm install -D tailwindcss postcss autoprefixer svelte-preprocess
+npx tailwindcss init tailwind.config.cjs -p
+```
+
+* Enable use of PostCSS in <style> blocks
+In your svelte.config.js file, import svelte-preprocess and configure it to process <style> blocks as PostCSS.
+
+```
+import preprocess from "svelte-preprocess";
+
+const config = {
+  preprocess: [
+    preprocess({
+      postcss: true,
+    }),
+  ],
+}
+```
+
+* Configure your template paths
+Add the paths to all of your template files in your tailwind.config.cjs file.
+
+```
+/** @type {import('tailwindcss').Config} */ 
+module.exports = {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
+  theme: {
+    extend: {}
+  },
+  plugins: []
+};
+```
+
+* Add the Tailwind directives to your CSS
+Create a ./src/app.css file and add the @tailwind directives for each of Tailwind’s layers.
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+
+* Import the CSS file
+Create a ./src/routes/__layout.svelte file and import the newly-created app.css file.
+
+```
+__layout.svelte
+
+<script>
+  import "../app.css";
+</script>
+
+<slot />
+```s
+
+
+
+
+
