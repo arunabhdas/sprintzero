@@ -1,6 +1,6 @@
 <script>
     import "../app.css";
   </script>
- <div class="">
-  <slot />
+ <div class="container mx-auto">
+  <slot></slot>
  </div> 
