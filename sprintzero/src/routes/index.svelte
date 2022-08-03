@@ -1,4 +1,8 @@
-  <div>
+ <script>
+    import DashboardItemForm from "../components/DashboardItemForm.svelte";
+ </script>
+ <main>
+ <div>
     <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
     <div class="relative z-40 md:hidden" role="dialog" aria-modal="true">
       <!--
@@ -246,33 +250,20 @@
                 Leaving: "transition ease-in duration-75"
                   From: "transform opacity-100 scale-100"
                   To: "transform opacity-0 scale-95"
-              -->
               <div class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none" role="menu" aria-orientation="vertical" aria-labelledby="user-menu-button" tabindex="-1">
-                <!-- Active: "bg-gray-100", Not Active: "" -->
+                Active: "bg-gray-100", Not Active: ""
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-0">Your Profile</a>
   
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-1">Settings</a>
   
                 <a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" tabindex="-1" id="user-menu-item-2">Sign out</a>
               </div>
+              -->
             </div>
           </div>
         </div>
       </div>
-  
-      <main class="flex-1">
-        <div class="py-6">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-            <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
-          </div>
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
-            <!-- Replace with your content -->
-            <div class="py-4">
-              <div class="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
-            </div>
-            <!-- /End replace -->
-          </div>
-        </div>
-      </main>
+      <DashboardItemForm/>
     </div>
   </div>
+</main>
