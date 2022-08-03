@@ -5,19 +5,22 @@
 		</div>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
 			<!-- Replace with your content -->
-			<form>
-				<div>
-					<label for="dashboarditem" />
+			<form class="my-6">
+				<div class="flex flex-col text-sm mb-2">
+					<label class="font-bold mb-2 text-gray-800"
+                    for="dashboarditem">Projects</label>
 					<input
 						type="text"
 						name="dashboarditem"
-						placeholder="Add a new item to the dashboard"
-						class="border border-gray-300 rounded-lg p-2"
+						placeholder="Add a new project to the dashboard"
+						class="appearance-none shadow-sm border border-gray-200 p-2 
+                        focus:outline-none focus:border-gray-500 rounded-lg"
 					/>
 				</div>
 				<button
 					type="submit"
-					class="bg-sky-500 hover:bg-sky-700 text-white font-bold py-2 px-4 rounded-lg"
+					class="w-full shadow-sm rounded bg-sky-500 hover:bg-sky-600 
+                    text-white py-2 px-4"
 				>
 					Add
 				</button>
