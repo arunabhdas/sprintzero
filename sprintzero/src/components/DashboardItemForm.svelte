@@ -1,7 +1,10 @@
 <script>
     let dashboarditem = '';
+    import {addDashboardItem} from '../stores/dashboarditemStore.js';
     const handleSubmit = () => {
-        console.log("submitting")
+        addDashboardItem(dashboarditem);
+        dashboarditem = '';
+        console.log('submitting')
     };
 </script>
 

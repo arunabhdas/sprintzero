@@ -1,5 +1,7 @@
  <script>
     import DashboardItemForm from "../components/DashboardItemForm.svelte";
+    import DashboardItem from "../components/DashboardItem.svelte";
+    import {dashboarditems} from "../stores/dashboarditemStore.js";
  </script>
  <main>
  <div>
@@ -268,6 +270,9 @@
         </div>
       </div>
       <DashboardItemForm/>
+      {#each $dashboarditems as dashboarditem}
+      <DashboardItem dashboarditem={dashboarditem} index={dashboarditem.id}/>
+      {/each}
     </div>
   </div>
 </main>
