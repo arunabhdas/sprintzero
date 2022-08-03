@@ -1,3 +1,10 @@
+<script>
+    let dashboarditem = '';
+    const handleSubmit = () => {
+        console.log("submitting")
+    };
+</script>
+
 <main class="flex-1">
 	<div class="py-6">
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
@@ -5,12 +12,13 @@
 		</div>
 		<div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
 			<!-- Replace with your content -->
-			<form class="my-6">
+			<form class="my-6" on:submit|preventDefault="{handleSubmit}">
 				<div class="flex flex-col text-sm mb-2">
 					<label class="font-bold mb-2 text-gray-800"
                     for="dashboarditem">Projects</label>
 					<input
 						type="text"
+                        bind:value="{dashboarditem}"
 						name="dashboarditem"
 						placeholder="Add a new project to the dashboard"
 						class="appearance-none shadow-sm border border-gray-200 p-2 
