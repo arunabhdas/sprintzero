@@ -1,6 +1,11 @@
 # SprintZero
 SprintZero is a project management tool
 
+## Screenshots
+
+![Screenshot1](https://raw.githubusercontent.com/arunabhdas/sprintzero/main/screenshots/screenshot_1.png)
+![Screenshot2](https://raw.githubusercontent.com/arunabhdas/sprintzero/main/screenshots/screenshot_2.png)
+
 ## Steps
 
 * Boostrap sprintzero as below
