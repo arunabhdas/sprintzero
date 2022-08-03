@@ -1,10 +1,13 @@
-<div class="bg-indigo-700">
-    <div class="max-w-2xl mx-auto text-center py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
-      <h2 class="text-3xl font-extrabold text-white sm:text-4xl">
+  <div class="bg-indigo-50">
+    <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
+      <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 md:text-4xl">
         <span class="block">Welcome to Sprint Zero</span>
-        <span class="block">Next Gen CRM Automation </span>
+        <span class="block text-indigo-600">Next Gen CRM Automation</span>
       </h2>
-      <p class="mt-4 text-lg leading-6 text-indigo-200">End-to-end automation</p>
-      <a href="#" class="mt-8 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50 sm:w-auto"> Sign up for free </a>
+      <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+        <div class="inline-flex rounded-md shadow">
+          <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"> Get started </a>
+        </div>
+      </div>
     </div>
   </div>
