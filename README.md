@@ -1,5 +1,5 @@
 # SprintZero
-SprintZero is a project management tool
+SprintZero is a next-gen open-source project management tool
 
 ## Screenshots
 
